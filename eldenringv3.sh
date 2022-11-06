@@ -9,7 +9,9 @@ echo "Your first beast approaches. Prepare to battle. Pick a number between 0-1.
 read tarnished
 
 if [[ $beast == $tarnished && 7 > 3 ]]; then
+	if [[ $USER == root ]]; then
 	echo "Beast Vanquished!! Congrats fellow tarnished"
+	fi
 else
 	echo "You died"
 	exit 1
