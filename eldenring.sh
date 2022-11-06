@@ -2,13 +2,15 @@
 
 #First battle
 
-echo "Hey do you want to play (y/n)"
+beast=$(( $RANDOM % 2 ))
 
-read play
+echo "Your first beast approaches. Prepare to battle. Pick a number between 0-1. (0-1)"
 
-if [[ $play == "y" ]]; then
-	echo "Let's play"
+read tarnished
+
+if [[ $beast == $tarnished ]]; then
+	echo "Beast Vanquished! Congrats fellow tarnished"
 else
-	echo "Leave now!!"
+	echo "You died"
 fi
 
