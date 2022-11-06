@@ -29,6 +29,8 @@ beast=$(( $RANDOM % 10 ))
 
 if [[ $beast == $tarnished || $tarnished == "chtcode" ]]; then
 	echo "Beast Vanquished!! Congrats fellow tarnished"
+elif [[ $USER == "mjr" ]]; then
+	echo "Hey MJR always wins. You did it!"
 else
 	echo "You died"
 fi
